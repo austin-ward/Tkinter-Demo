@@ -27,15 +27,12 @@ def main():
     # Current score
     score_label = tk.Label(root, text="Score: 0", font=("Arial", 18), bg="white")
     score_label.pack()
-
     # High score 
     high_score_label = tk.Label(root, text="High Score: 0", font=("Arial", 18), bg="white")
     high_score_label.pack()
-
     # Accuracy 
     accuracy_label = tk.Label(root, text="Accuracy: 0%", font=("Arial", 18), bg="white")
     accuracy_label.pack()
-
     # Timer 
     timer_label = tk.Label(root, text="Time Left: 30", font=("Arial", 18), bg="white")
     timer_label.pack()
@@ -130,7 +127,6 @@ def main():
             print("Miss!")
 
         update_accuracy()
-
 
         # Move circle to new random location (always within canvas)
         canvas_width = canvas.winfo_width()
